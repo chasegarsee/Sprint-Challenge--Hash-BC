@@ -28,6 +28,12 @@ class TestEx1(unittest.TestCase):
         self.assertTrue(answer_4[0] == 6)
         self.assertTrue(answer_4[1] == 2)
 
+    def test_ex1_5(self):
+        weights_5 = [4, 6, 10, 15, 16]
+        answer_5 = get_indices_of_item_weights(weights_5, 5, 21)
+        self.assertTrue(answer_5[0] == 3)
+        self.assertTrue(answer_5[1] == 1)
+
 
 if __name__ == '__main__':
     unittest.main()
